@@ -33,13 +33,14 @@
 			<div id="primero">
 				<div id="art1">
 
-					<form method="post">
+					<form >
 						<h3>inicia secion</h3>
 						
-				<input id="noob" type="text" name="nombre" placeholder="nombre" required="text"><br />
-				<input id="noob2" type="password" name="contrasena" placeholder="contrasena" required="password"><br />
-				<input id="noob3" type="submit" name="enviar" value="enviar">
+				<input id="noob" type="text" name="nombre" placeholder="nombre" ><br />
+				<input id="noob2" type="password" name="contrasena" placeholder="contrasena" ><br />
+				<input id="noob3" type="submit"  name="enviar" value="enviar">
 			</form>
+			<p>no tienes cuenta?</p><a href="#">/crear una cuenta</a>
 				</div>
 
 
@@ -82,16 +83,7 @@
 					
 				</ul>	
 		</div>
-		<div class="col 4">
-			
-			<form id="formulario" method="post">
-				<h3>suscribete</h3>
-				<input id="noob" type="text" name="nombre" placeholder="nombre" required="text"><br />
-				<input id="noob2" type="password" name="contrasena" placeholder="contrasena" required="password"><br />
-				<input id="noob3" type="submit" name="enviar" value="enviar">
-			</form>
-
-		</div>
+		
 
 		<div id="footer"><p>todos los derechos reservados</p></div>
 	</div>
@@ -100,6 +92,48 @@
 
 
 </div>
+
+<script type="text/javascript">
+	
+	function validarEmail(email) 
+	{
+	    var re = /\S+@\S+\.\S+/;
+	    return re.test(email);
+	}
+		var form = document.procesar;
+
+	document.procesar.onsubmit = function(e){
+		var ready = false;
+		
+		if(form.nombre.value!="" && form.apellidos.value!=""&& form.email.value!=""&& form.password.value!="" && form.confirm.value!=""){
+			ready = true;
+		}else{
+				ready= false;
+				alert("Hay algunos campos vacios");
+				e.preventDefault();			
+		}
+
+		if(ready){
+			if(validarEmail(form.email.value)){
+				if(form.password.value==form.confirm.value){
+					ready = true;
+				}else{
+					ready= false;
+					alert("El password y la confirmacion no coinciden");
+					form.password.focus();
+					e.preventDefault();
+				}		
+			}else {
+					alert("El email no tiene un formato valido!");
+					form.email.focus();
+					e.preventDefault();			
+			}
+		}
+
+	}
+
+
+</script>
 
 
 
