@@ -5,46 +5,61 @@
 }
 
 #contenedor{
-  background-color: white;
+  background-color:rgba(0,64,128,.1);
   color: white;
   width: 100%;
   height: 3000px;       
+  margin: auto;
 }
 #cabeza{
-  background-color:black;
+  background-color:#323edd;
   width: 100%;
   height: 5%;
   text-align: center;
+  line-height: 130px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 60px;
   margin-bottom:10px ;
   
   
 }
 /*https://bradleysantos123.github.io/bidi.github.io/ */
 #nacegacion{
-  background-color: gray;
-  width: 97%;
-  height: 2%;
-  margin: 10px;
+  background-color:#6600FF;
+  width: 100%;
+  line-height: 40px;
+  height: 10%;
   text-align: center;
+  box-shadow:1px 1px 17px black ;
   padding: 10px;
-  border-radius: 4px;
+  position: fixed;
+  top: 0;
+}
+#primero h2{
+  text-align: start;
+  font-size: 30px;
+  margin-bottom:15px; 
 }
 #cuerpo{
-  background-color: white;
+  background-color:rgba(0,64,128,.0);;
   width: 97%;
-  height:71%;
+  height:82%;
   margin: 10px;
   padding: 10px;
   border-radius: 4px;
-  border: 1px solid gray;
+  
   
 }
 #pie{
   background-color: #1b262c;
-  width: 97%;border-radius: 4px;
-  height: 10%;margin: 10px;
+  width: 98.5%;
+  height: 11%;
+  margin: 0px;
   padding: 10px;
-  
+  color:#ededed ;
+  font-weight:bold;
+  line-height: 30px;
   
     
 }
@@ -52,32 +67,44 @@
   background-color: white;
   width: 75%;
   margin: 10px;
-  height: 88%;
+  height: 99%;
   padding: 10px;
   text-align: center;
   word-wrap: break-word;
     border-radius: 4px;
- border: 1px solid gray;
+ border: 1px solid rgba(0,64,128,.2);
+  box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
   float: left;
   
+}
+#primero p{
+  margin-bottom: 2rem;
+  line-height: 25px;
+  color:#7f8c8d;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: justify;
 }
 
   
 
 #nacegacion li{
   display: inline-block;
+  
 }
 #nacegacion a {
   background-color: red;
   color: white;
   text-decoration: none;
-  padding: 5px;
-  
+  padding: 10px;
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 8px;
   box-shadow: 0px 3px darkred ;
   
 }
 #nacegacion a:hover{
-  background-color: darkblue;
+  background-color: #ffa41b;
   transition: 0.3s;
   color:white;
 }
@@ -90,10 +117,11 @@
   margin: 10px;
   height: 40%;
   padding: 10px;
+  
   text-align: center;
   word-wrap: break-word;
     border-radius: 4px;
-  border: 1px solid gray;
+  
   
 }
 
@@ -103,11 +131,12 @@
   width: 95%;
   margin: 10px;
   height: 40%;
+  margin-top: 29px;
   padding: 10px;
   text-align: center;
   word-wrap: break-word;
     border-radius: 4px;
-  border:1px solid gray;
+  
   
 }
 
@@ -132,44 +161,60 @@
 #noob {
   width: 300px;
   height: 30px;
+  font-weight: bold;
+  padding-block-start:2px;
+  /*! padding-block-end:2px ; */
   border-radius: 7px 7px 0px 0px;
   border:2px solid gray;
   
   
   
+  padding: 0 7px;
 }
-#noob:hover{
- box-shadow:1px 1px 5px blue;
-  
-}
+
 #noob2 {
   width: 300px;
+  padding-block-start:2px;
+  font-weight: bold;
+  /*! padding-block-end:2px ; */
   height: 30px;
   border-radius: 0px 0px 7px 7px;
   border:2px solid gray;
   
+  padding: 0 7px;
 }
-#noob2:hover{
-  box-shadow:1px 1px 5px blue;
+.col h3{
+  font-size: 25px;
+  margin: 10px;
 }
+
 #noob3{
-  width: 305px;
-  background-color: tomato;
-  color: black;
+  width: 318px;
+  background-color: red;
+  color: white;
   border-style: none;
-  margin-top: 5px;
+  font-weight: bold;
+  margin-top: 8px;
+  border-radius: 6px;
+  padding: 6px;
   box-shadow: 1px 6px darkred;
     
 }
 #noob3:hover{
-  background-color: lightsalmon;
-  transition: 0.1;
+  background-color: #ffa41b;
+  transition: 0.2;
+  
 }
+
 #footer{
-  background-color: #1b262c;
+  background-color:black;
   text-align: center;
+  line-height: 90px;
+  font-weight:bold;
   width: 100%;
+  
   height: 30%;
+  color: #ededed ;
   overflow: hidden;
 }
 #anuncio {
@@ -180,21 +225,49 @@
   color:black;
   width: 18%;
   margin: 10px;
+  font-weight:bold ;
   float: left;
   height: 88%;
   padding: 10px;
     border-radius: 4px;
-  border:1px solid gray;
-
+  border: 1px solid rgba(0,64,128,.2);
+  box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+  line-height: 40px
 }
-
+#anuncio li{
+  list-style: none;
+  display:block;
+  margin-top:100px;
+  
+}
+#anuncio a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background-color:red;
+  padding: 40px;
+  border-radius: 4px;
+  
+  
+}
+.imagenes{
+  max-width: 800px;
+  max-height: 200px;
+  
+}
+#anuncio img {
+  width: 200px;
+  margin-top: 70px;
+  max-width: 200px;
+  
+}
 
 
   
 .social {
   position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
-  left: 0; /* Establecemos la barra en la izquierda */
-  top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+  right: 0; /* Establecemos la barra en la izquierda */
+  top: 242px; /* Bajamos la barra 200px de arriba a abajo */
   z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
  
@@ -213,15 +286,15 @@
     transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
   }
  
-  .social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
-  .social ul li .icon-twitter {background: #00abf0;}
-  .social ul li .icon-googleplus {background: #d95232;}
-  .social ul li .icon-pinterest {background: #ae181f;}
-  .social ul li .icon-mail {background: #666666;}
+  .social ul li .icon-facebook {background:#3b5998; padding: 13.3px; border-top-left-radius:10px;} /* Establecemos los colores de cada red social, aprovechando su class */
+  .social ul li .icon-twitter {background: #00abf0; padding: 10px;}
+  .social ul li .icon-googleplus {background: #d95232;padding: 8px;}
+  .social ul li .icon-pinterest {background: #ae181f;padding: 10px;}
+  .social ul li .icon-mail {background: #666666;padding: 10px; border-bottom-left-radius:10px}
  
   .social ul li a:hover {
     background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
-    padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+     /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
   }
 
 
@@ -292,10 +365,7 @@
   
   /*----------------page-wrapper----------------*/
   
-  .page-wrapper {
-    height: 100vh;
-  }
-  
+ 
   .page-wrapper .theme {
     width: 40px;
     height: 40px;
@@ -312,6 +382,7 @@
   
   .page-wrapper.toggled .sidebar-wrapper {
     left: 0px;
+    box-shadow: 0 17px 1000px 1px black;
   }
   
   @media screen and (min-width: 768px) {
@@ -322,11 +393,17 @@
   /*----------------show sidebar button----------------*/
   #show-sidebar {
     position: fixed;
-    left: 0;
-    top: 10px;
-    border-radius: 0 4px 4px 0px;
-    width: 35px;
+    left: 15px;
+    color: white;
+    text-align: center;
+    background-color: red;
+    top: 20px;
+    padding: 5px;
+    box-shadow: 1px 3px 0px 0px darkred;
+    border-radius: 5px;
+    width: 30px;
     transition-delay: 0.3s;
+    /*! background-color: red; */
   }
   .page-wrapper.toggled #show-sidebar {
     left: -40px;
@@ -334,7 +411,7 @@
   /*----------------sidebar-wrapper----------------*/
   
   .sidebar-wrapper {
-    width: 260px;
+    width: 270px;
     height: 100%;
     max-height: 100%;
     position: fixed;
@@ -450,14 +527,14 @@
   
   .sidebar-wrapper .sidebar-menu ul li a {
     display: inline-block;
-    width: 100%;
+    width: 99%;
     text-decoration: none;
     position: relative;
-    padding: 8px 30px 8px 20px;
+    padding: 2px 1px 8px 1px;
   }
   
   .sidebar-wrapper .sidebar-menu ul li a i {
-    margin-right: 10px;
+    margin-right: 3px;
     font-size: 12px;
     width: 30px;
     height: 30px;
@@ -485,7 +562,7 @@
     text-align: center;
     background: 0 0;
     position: absolute;
-    right: 15px;
+    right: 1px;
     top: 14px;
   }
   
@@ -501,7 +578,7 @@
   .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
     content: "\f111";
     font-family: "Font Awesome 5 Free";
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
     display: inline-block;
     text-align: center;
@@ -636,7 +713,7 @@
   /*-----------------------------chiller-theme-------------------------------------------------*/
   
   .chiller-theme .sidebar-wrapper {
-      background: #31353D;
+      background: #6600FF;
   }
   
   .chiller-theme .sidebar-wrapper .sidebar-header,
@@ -658,7 +735,7 @@
   .chiller-theme .sidebar-wrapper .sidebar-brand>a,
   .chiller-theme .sidebar-wrapper .sidebar-menu ul li a,
   .chiller-theme .sidebar-footer>a {
-      color: #818896;
+      color: #fff;
   }
   
   .chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover>a,
@@ -689,11 +766,11 @@
   .chiller-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown div,
   .chiller-theme .sidebar-wrapper .sidebar-search input.search-menu,
   .chiller-theme .sidebar-wrapper .sidebar-search .input-group-text {
-      background: #3a3f48;
+      background: red;
   }
   
   .chiller-theme .sidebar-wrapper .sidebar-menu .header-menu span {
-      color: #6c7b88;
+      color: #fff;
   }
   
   .chiller-theme .sidebar-footer {
@@ -710,8 +787,10 @@
       border-right: none;
   }
    
-#primero img(
- max-widht:100px;
+#img(
+ 
+  width:600px;
+  heigth:200px;
 )
 
   /*fin de cosas raras*/
